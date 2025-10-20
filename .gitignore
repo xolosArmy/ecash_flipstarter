@@ -1,0 +1,12 @@
+node_modules
+.pnpm-store
+pnpm-lock.yaml
+.DS_Store
+.next
+out
+build
+dist
+coverage
+.env*
+.idea
+.vscode

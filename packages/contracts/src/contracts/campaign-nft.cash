@@ -1,0 +1,10 @@
+pragma cashscript ^0.10.0;
+
+contract CampaignNFT(bytes campaignId, pubkey ownerKey) {
+    function mint(sig ownerSig) {
+        require(checkSig(ownerSig, ownerKey));
+        bytes metadata = campaignId;
+        // In a real implementation, metadata would encode campaign state for the NFT mint.
+        // The demo contract only asserts ownership for illustrative purposes.
+    }
+}

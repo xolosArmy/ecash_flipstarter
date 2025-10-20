@@ -1,0 +1,9 @@
+pragma cashscript ^0.10.0;
+
+contract CampaignPledge(pubkey campaignKey, bytes pledgeId, int goalSats) {
+    function commit(sig campaignSig, int pledgedSats) {
+        require(checkSig(campaignSig, campaignKey));
+        require(pledgedSats >= goalSats);
+        // Funds can now be swept by the campaign owner with on-chain attestation.
+    }
+}
