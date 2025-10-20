@@ -1,0 +1,26 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./packages/types" },
+    { "path": "./packages/config" },
+    { "path": "./packages/sdk" },
+    { "path": "./packages/ui" },
+    { "path": "./packages/contracts" },
+    { "path": "./apps/api" },
+    { "path": "./apps/web" }
+  ],
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "baseUrl": ".",
+    "paths": {
+      "@ecash-flipstarter/types": ["packages/types/src"],
+      "@ecash-flipstarter/config": ["packages/config/src"],
+      "@ecash-flipstarter/sdk": ["packages/sdk/src"],
+      "@ecash-flipstarter/ui": ["packages/ui/src"],
+      "@ecash-flipstarter/contracts": ["packages/contracts/src"],
+      "@ecash-flipstarter/ui/*": ["packages/ui/src/*"]
+    }
+  }
+}

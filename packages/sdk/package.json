@@ -1,0 +1,24 @@
+{
+  "name": "@ecash-flipstarter/sdk",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "eslint src --ext .ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ecash-flipstarter/config": "workspace:*",
+    "@ecash-flipstarter/types": "workspace:*",
+    "@fullstackcash/chronik-client": "^0.5.0",
+    "ecash-lib": "^0.6.0",
+    "ecashaddrjs": "^0.4.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
