@@ -8,8 +8,11 @@
   "files": ["dist"],
   "scripts": {
     "build": "tsc -p tsconfig.json",
+    "dev": "tsc -w --preserveWatchOutput",
     "lint": "eslint src --ext .ts",
-    "typecheck": "tsc --noEmit"
+    "test": "echo \"No tests defined for @ecash-flipstarter/types\"",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --check \"src/**/*.{ts,tsx,js,jsx,json,md}\""
   },
   "devDependencies": {
     "typescript": "^5.3.3"

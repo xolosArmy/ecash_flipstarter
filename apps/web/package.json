@@ -8,20 +8,25 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "test": "echo \"No tests defined for web app\"",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --check ."
   },
   "dependencies": {
     "@ecash-flipstarter/config": "workspace:*",
     "@ecash-flipstarter/sdk": "workspace:*",
     "@ecash-flipstarter/types": "workspace:*",
     "@ecash-flipstarter/ui": "workspace:*",
+    "axios": "^1.6.7",
     "autoprefixer": "^10.4.16",
     "date-fns": "^3.2.0",
     "next": "14.1.0",
     "postcss": "^8.4.32",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tailwindcss": "^3.4.1"
+    "swr": "^2.2.0",
+    "tailwindcss": "^3.4.1",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@types/node": "^20.11.0",

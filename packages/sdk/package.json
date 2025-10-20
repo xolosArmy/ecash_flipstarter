@@ -8,13 +8,16 @@
   "files": ["dist"],
   "scripts": {
     "build": "tsc -p tsconfig.json",
+    "dev": "tsc -w --preserveWatchOutput",
     "lint": "eslint src --ext .ts",
-    "typecheck": "tsc --noEmit"
+    "test": "echo \"No tests defined for @ecash-flipstarter/sdk\"",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --check \"src/**/*.{ts,tsx,js,jsx,json,md}\""
   },
   "dependencies": {
     "@ecash-flipstarter/config": "workspace:*",
     "@ecash-flipstarter/types": "workspace:*",
-    "@fullstackcash/chronik-client": "^0.5.0",
+    "chronik-client": "npm:@fullstackcash/chronik-client@^0.5.0",
     "ecash-lib": "^0.6.0",
     "ecashaddrjs": "^0.4.0"
   },
